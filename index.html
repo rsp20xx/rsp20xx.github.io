@@ -28,6 +28,13 @@
          font-size:50px;
          border:0px;
          margin-top:30px;
+         display:flex;
+         flex-wrap:wrap;
+         justify-content:center;
+         align-items:center;
+       }
+       #items {
+          font-size:80px;
        }
    </style>
    <title>rsp20xx</title>
@@ -35,15 +42,16 @@
 <body>
    <h2 class="box">contador de objetos</h2>
    <div class="box">
-     lista desplegable de objetos para contar
-     <label for="items">Choose a item:</label>
-
-     <select name="items" id="items">
-        <option value="toalla_small">Toalla Small</option>
-        <option value="toalla_medium">Toalla Medium</option>
-        <option value="toalla_big">Toalla Big</option>
-        <option value="tapete">Tapete</option>
-     </select>
+     <h4>lista desplegable de objetos para contar</h4>
+     <label for="items">
+        Choose a item:
+        <select name="items" id="items">
+           <option value="toalla_small">Toalla Small</option>
+           <option value="toalla_medium">Toalla Medium</option>
+           <option value="toalla_big">Toalla Big</option>
+           <option value="tapete">Tapete</option>
+        </select>
+     </label>
    </div>
    <div class="box">display o pantalla</div>
    <div class="box">text-box para agregar cantidades mayores a 1</div>
